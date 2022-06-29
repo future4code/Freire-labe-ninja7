@@ -123,7 +123,10 @@ export default class Contratar extends React.Component {
         })
         return (
             <div>  
-                <Header></Header>
+                <Header 
+                    irParaHome={this.props.irParaHome}
+                    irParaContratarUmNinja={this.props.irParaContratarUmNinja}
+                    irParaQueroSerUmNinja={this.props.irParaQueroSerUmNinja}/>
                 <AlinhaInputs>
                 <input value={this.state.valorMin} onChange={this.atualizarValorMin} placeholder="Valor Mínimo"></input>
                 <input value={this.state.valorMax} onChange={this.atualizarValorMax} placeholder="Valor Máximo"></input>

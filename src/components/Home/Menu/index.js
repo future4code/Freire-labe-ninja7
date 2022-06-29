@@ -9,9 +9,12 @@ export default class Menu extends React.Component {
   render() {
     return (
         <div>
-            <Header></Header>
-            <Article></Article>
-            <Footer></Footer>
+            <Header 
+            irParaHome={this.props.irParaHome}
+			irParaContratarUmNinja={this.props.irParaContratarUmNinja}
+			irParaQueroSerUmNinja={this.props.irParaQueroSerUmNinja}/>
+            <Article/>
+            <Footer />
         </div>
     )
 }
