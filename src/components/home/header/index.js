@@ -4,7 +4,6 @@ import logo from './img/logo.png'
 import carrinho from './img/carrinho.png'
 
 
-
 export default class Header extends React.Component {
   render() {
     return (

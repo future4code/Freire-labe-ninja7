@@ -1,11 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import Axios from 'axios';
+import Footer from '../Home/Footer';
+import Header from '../Home/Header';
 
 const Detalhesconteiner = styled.div`
 display: flex;
 flex-direction: column;
-width: 20vw;
+width: 30vw;
+height: 20vw;
 padding: 15px;
 background-color: #edf0f1;
 border: ridge;
@@ -25,9 +28,12 @@ div{
 }
 `
 const TelaDeDetalhes = styled.div`
+
+padding: 100px 100px;
 display: flex;
 justify-content: center;
 margin-top: 20px;
+
 `
 
 export default class Detalhes extends React.Component{
@@ -60,7 +66,15 @@ export default class Detalhes extends React.Component{
             return <li key={formaDoPagamento}>{formaDoPagamento}</li>
         })
         return (
+            <div> 
+            <Header 
+            irParaHome={this.props.irParaHome}
+			irParaContratarUmNinja={this.props.irParaContratarUmNinja}
+			irParaQueroSerUmNinja={this.props.irParaQueroSerUmNinja}/>
+            <div> 
+                
             <TelaDeDetalhes>
+                
             <Detalhesconteiner>
               <h2>{this.state.servico.title}</h2>
               <h4>Preço: R$ {this.state.servico.price},00</h4>
@@ -70,7 +84,11 @@ export default class Detalhes extends React.Component{
               <div>{listaDeFormasDePagamento}</div>
               <button onClick={()=> {this.props.irParaContratar()}}>Voltar para lista</button>
             </Detalhesconteiner>
+     
             </TelaDeDetalhes>
+            </div>
+            <Footer />
+            </div>
         )
     }
 }

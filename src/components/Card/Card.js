@@ -2,10 +2,12 @@ import React from 'react';
 import styled from 'styled-components'
 
 const DivCard = styled.div`
+
 display: flex;
 flex-direction: column;
 border: solid black 1px;
 width: 20vw;
+height: 20vw;
 padding: 15px;
 background-color: #edf0f1;
 border-radius: 8px;

@@ -3,25 +3,43 @@ import Menu from './components/Home/Menu/index';
 import Contratar from './components/Contrata/Contratar';
 import CadastreServico from './components/Cadastre-Serviço/CadastreServico';
 import Card from './components/Card/Card';
+import Detalhes from './components/Detalhes/Detalhes';
 
 
 export default class App extends Component {
 	
 	state = {
-		telaAtual : "Home"
+		telaAtual : "ContratarUmNinja",
+		detalhesDoServico : ""
 	  }
 
 	mudarDePage = () => {
 		switch (this.state.telaAtual){
 	
 		case "Home":
-			return <Menu irParaHome={this.irParaHome}/>
+			return <Menu 
+			irParaHome={this.irParaHome}
+			irParaContratarUmNinja={this.irParaContratarUmNinja}
+			irParaQueroSerUmNinja={this.irParaQueroSerUmNinja}/> 
+			
 		case "ContratarUmNinja":
-			return <Contratar irParaContratarUmNinja={this.irParaContratarUmNinja}/>
+			return <Contratar
+			irParaDetalhes={this.irParaDetalhes}
+			irParaHome={this.irParaHome}
+			irParaContratarUmNinja={this.irParaContratarUmNinja}
+			irParaQueroSerUmNinja={this.irParaQueroSerUmNinja}/> 
+
 		case "QueroSerUmNinja":
-			return <CadastreServico irParaQueroSerUmNinja={this.irParaQueroSerUmNinja}/>
-		case "Card":
-			return <Card irParaCard ={this.irParaCard}/>
+			return <CadastreServico 
+			irParaHome={this.irParaHome}
+			irParaContratarUmNinja={this.irParaContratarUmNinja}
+			irParaQueroSerUmNinja={this.irParaQueroSerUmNinja}/> 
+		case "Detalhes":
+			return <Detalhes 
+			servicoId= {this.state.detalhesDoServico}
+			irParaHome={this.irParaHome}
+			irParaDetalhes={this.irParaDetalhes}
+			irParaQueroSerUmNinja={this.irParaQueroSerUmNinja}/> 
 		// case "Carrinho":
 		// 	return <TELA DO CARRINHO irParaCarrinho={this.irParaCarrinho}/>
 		default:
@@ -30,7 +48,7 @@ export default class App extends Component {
 	  }
 
 	irParaHome= () => {
-		this.setState({telaAtual: "home"})
+		this.setState({telaAtual: "Home"})
 		console.log(1)
 	  }
 	
@@ -48,6 +66,11 @@ export default class App extends Component {
 		this.setState({telaAtual: "Card"})
 		console.log(4)
 	  }
+
+	irParaDetalhes = (servicoId) => {
+		this.setState({ telaAtual: "Detalhes", detalhesDoServico: servicoId })
+	}
+
 
 	// irParaCarrinho = () => {
 	// 	this.setState({telaAtual: "Carrinho"})

@@ -118,7 +118,10 @@ export default class CadastreServico extends React.Component {
   render() {
     return (
       <div>
-        <Header></Header>
+        <Header 
+            irParaHome={this.props.irParaHome}
+			      irParaContratarUmNinja={this.props.irParaContratarUmNinja}
+			      irParaQueroSerUmNinja={this.props.irParaQueroSerUmNinja}/>
         <div className="container">
         <h1> Cadastre o seu serviço </h1>
 
