@@ -3,8 +3,10 @@ import axios from "axios";
 import './index.css';
 import Select from "react-select";
 import makeAnimated from "react-select/animated";
-const animatedComponents = makeAnimated();
+import Header from "../Home/Header";
+import Footer from "../Home/Footer";
 
+const animatedComponents = makeAnimated();
 
 const options = [
   { value: "cartão de débito", label: "cartão de débito"},
@@ -165,18 +167,14 @@ export default class CadastreServico extends React.Component {
           type="number"
         />
 
-        <select
-          
-          value={this.state.pagamento}
-          multiple
-          onChange={this.onChangePagamento}
-        >
-           <option value="cartão de débito"> Cartão de Débito </option>
-           <option value=" cartão de crédito"> Cartão de Crédito </option>
-           <option value="paypal"> Paypal </option>
-           <option value="boleto"> Boleto </option>
-           <option value="pix"> Pix </option>
-        </select>
+        <Select
+        onChange={this.onChangePagamento }
+        components={animatedComponents}
+        className="select"
+        isMulti
+        options={options}
+        closeMenuOnSelect={false}
+        />
 
         <input
           placeholder="Prazo de Serviço"

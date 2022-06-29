@@ -2,15 +2,12 @@ import React, { Component } from 'react';
 import Menu from './components/Home/Menu/index';
 import Contratar from './components/Contrata/Contratar';
 import CadastreServico from './components/Cadastre-Serviço/CadastreServico';
-import Card from './components/Card/Card';
 import Detalhes from './components/Detalhes/Detalhes';
-import CadastreServico from "./components/Cadastre-Serviço/CadastreServico";
-
 
 export default class App extends Component {
 	
 	state = {
-		telaAtual : "ContratarUmNinja",
+		telaAtual : "Home",
 		detalhesDoServico : ""
 	  }
 
