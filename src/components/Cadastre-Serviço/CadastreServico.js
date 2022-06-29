@@ -1,17 +1,25 @@
 import React from "react";
 import axios from "axios";
 import './index.css';
-import Header from "../Home/Header";
-import Footer from "../Home/Footer";
+import Select from "react-select";
+import makeAnimated from "react-select/animated";
+const animatedComponents = makeAnimated();
 
 
+const options = [
+  { value: "cartão de débito", label: "cartão de débito"},
+  { value: "cartão de crédito", label: "cartão de crédito"},
+  { value: "paypal", label: "paypal"},
+  { value: "boleto", label: "boleto"},
+  { value: "pix", label: "pix"},
+];
 
 export default class CadastreServico extends React.Component {
   state = {
     titulo: "",
     Descricao: "",
     preco: "",
-    pagamento: "",
+    pagamento: [],
     data: "",
   };
 
@@ -34,9 +42,16 @@ export default class CadastreServico extends React.Component {
   };
 
   onChangePagamento = (event) => {
-    this.setState({
-      pagamento: event.target.value,
-    });
+    const metodosPagamentos = event.map(metodo =>{
+      return metodo.value
+      
+    })
+    
+     this.setState({
+     pagamento: metodosPagamentos
+      
+     });
+ 
   };
 
   onChangeData = (event) => {
@@ -81,7 +96,7 @@ export default class CadastreServico extends React.Component {
     const body = {
       title: this.state.titulo,
       description: this.state.Descricao,
-      price: this.state.preco,
+      price: +this.state.preco,
       paymentMethods: this.state.pagamento,
       dueDate: this.state.data,
     };
@@ -89,7 +104,7 @@ export default class CadastreServico extends React.Component {
     axios
       .post(url, body, {
         headers: {
-          Authorizastion: "7d95ba58-9060-4f89-9805-67c14d11e93d",
+          Authorization: "7d95ba58-9060-4f89-9805-67c14d11e93d",
         },
       })
 
@@ -103,19 +118,23 @@ export default class CadastreServico extends React.Component {
           data: "",
         });
       })
-
+      
       .catch((erro) => {
-        alert(erro.response);
+        console.log(erro.response);
       });
   };
-  pagamento = (event)=> {
+
+  pagamento=(event)=>{
     const valor =[...this.state.paymentMethods.event.target.value]
     this.setState({
       paymentMethods:valor
     })
   }
+  
+   
 
   render() {
+    console.log(this.state.pagamento);
     return (
       <div>
         <Header 

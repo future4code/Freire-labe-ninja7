@@ -4,6 +4,7 @@ import Contratar from './components/Contrata/Contratar';
 import CadastreServico from './components/Cadastre-Serviço/CadastreServico';
 import Card from './components/Card/Card';
 import Detalhes from './components/Detalhes/Detalhes';
+import CadastreServico from "./components/Cadastre-Serviço/CadastreServico";
 
 
 export default class App extends Component {

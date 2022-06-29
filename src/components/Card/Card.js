@@ -12,7 +12,6 @@ padding: 15px;
 background-color: #edf0f1;
 border-radius: 8px;
 
-
 h2{
     display: flex;
     align-items: center;
