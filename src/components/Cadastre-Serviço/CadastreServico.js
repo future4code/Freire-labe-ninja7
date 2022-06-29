@@ -1,5 +1,10 @@
 import React from "react";
 import axios from "axios";
+import './index.css';
+import Header from "../Home/Header";
+import Footer from "../Home/Footer";
+
+
 
 export default class CadastreServico extends React.Component {
   state = {
@@ -113,6 +118,8 @@ export default class CadastreServico extends React.Component {
   render() {
     return (
       <div>
+        <Header></Header>
+        <div className="container">
         <h1> Cadastre o seu serviço </h1>
 
         <br />
@@ -157,6 +164,10 @@ export default class CadastreServico extends React.Component {
         />
 
         <button onClick={this.createJob}> Cadastrar Serviço </button>
+
+        </div>
+
+        <Footer></Footer>
       </div>
     );
   }

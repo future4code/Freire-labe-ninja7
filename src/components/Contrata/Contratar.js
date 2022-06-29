@@ -2,7 +2,8 @@ import Axios from 'axios';
 import React from 'react';
 import styled from 'styled-components'
 import Card from '../Card/Card';
-
+import Header from '../Home/Header';
+import Footer from '../Home/Footer';
 
 const AlinhaInputs = styled.div`
 display: flex;
@@ -121,7 +122,9 @@ export default class Contratar extends React.Component {
 
         })
         return (
-            <div>  <AlinhaInputs>
+            <div>  
+                <Header></Header>
+                <AlinhaInputs>
                 <input value={this.state.valorMin} onChange={this.atualizarValorMin} placeholder="Valor Mínimo"></input>
                 <input value={this.state.valorMax} onChange={this.atualizarValorMax} placeholder="Valor Máximo"></input>
                 <input value={this.state.buscar} onChange={this.atualizarBuscar} placeholder="busca por título ou descrição"></input>
@@ -139,6 +142,7 @@ export default class Contratar extends React.Component {
                     {servicos}
                 </AlinharCards>
             </TelaComOsCards>
+            <Footer></Footer>
             </div>
 
         )
