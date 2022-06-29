@@ -3,6 +3,10 @@ import Menu from './components/Home/Menu/index';
 import Contratar from './components/Contrata/Contratar';
 import CadastreServico from './components/Cadastre-Serviço/CadastreServico';
 import Detalhes from './components/Detalhes/Detalhes';
+<<<<<<< HEAD
+=======
+
+>>>>>>> 98e3d61f3e294d657ce8d27dfbd43efd00c8fe83
 
 export default class App extends Component {
 	

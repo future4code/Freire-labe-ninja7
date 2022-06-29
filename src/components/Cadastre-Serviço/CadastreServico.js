@@ -175,7 +175,7 @@ export default class CadastreServico extends React.Component {
         options={options}
         closeMenuOnSelect={false}
         />
-
+        
         <input
           placeholder="Prazo de Serviço"
           type="date"
