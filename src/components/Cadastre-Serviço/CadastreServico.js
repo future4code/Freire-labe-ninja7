@@ -1,12 +1,9 @@
 import React from "react";
 import axios from "axios";
 import './index.css';
-// import Header from "../Home/Header";
-// import Footer from "../Home/Footer";
 import Select from "react-select";
 import makeAnimated from "react-select/animated";
 const animatedComponents = makeAnimated();
-
 
 
 const options = [
@@ -16,9 +13,6 @@ const options = [
   { value: "boleto", label: "boleto"},
   { value: "pix", label: "pix"},
 ];
-
-
-
 
 export default class CadastreServico extends React.Component {
   state = {
@@ -142,8 +136,8 @@ export default class CadastreServico extends React.Component {
   render() {
     console.log(this.state.pagamento);
     return (
-      <div >
-      {/* <Header></Header> */}
+      <div>
+      <Header/>
       <div className="container">
       <h1> Cadastre o seu serviço </h1>
       <br />
@@ -178,9 +172,8 @@ export default class CadastreServico extends React.Component {
         onChange={this.onChangeData}
       />
       <button onClick={this.createJob}> Cadastrar Serviço </button>
-      </div>
-      
-      {/* <Footer></Footer> */}
+
+       <Footer/> 
     </div>
     );
   }
