@@ -1,86 +1,65 @@
-import React from 'react';
-import styled from 'styled-components';
-import { createGlobalStyle } from 'styled-components';
-import Home from './components/Home/Home';
+import React, { Component } from 'react';
+import Menu from './components/Home/Menu/index';
 import Contratar from './components/Contrata/Contratar';
-import Detalhes from './components/Detalhes/Detalhes';
-import Header from './components/home/header/index'
-import Footer from "./components/home/footer/index"
-import Article from './components/home/article';
+import CadastreServico from './components/Cadastre-Serviço/CadastreServico';
+import Card from './components/Card/Card';
 
 
-{/* <Header></Header>
-<Article></Article>
-<Footer></Footer> */}
-
-export default class App extends React.Component {
-
+export default class App extends Component {
+	
 	state = {
-		paginaAtual: "HOME",
-		detalhesDoServico: "",
-		carrinho: []
-	}
+		telaAtual : "Home"
+	  }
 
-	adicionaAoCarrinho = (servico) => {
-		const novoCarrinho = [...this.state.carrinho, servico]
-		this.setState({ carrinho: novoCarrinho })
-		alert(`O serviço ${servico.title} foi adicionado ao carrinho.`)
-	}
-
-	irParaDetalhes = (servicoId) => {
-		this.setState({ paginaAtual: "DETALHES", detalhesDoServico: servicoId })
-	}
-
-	irParaContratar = () => {
-		this.setState({ paginaAtual: "CONTRATAR" })
-	}
-
-	irParaHome = () => {
-		this.setState({ paginaAtual: "HOME" })
-	}
+	mudarDePage = () => {
+		switch (this.state.telaAtual){
 	
-	atualizaPagina = () => {
-		switch (this.state.paginaAtual) {
-			case "HOME":
-				return <Home
-					irParaCadastro={this.irParaCadastro}
-					irParaContratar={this.irParaContratar} />
-		
-			case "CONTRATAR":
-				return <Contratar
-					irParaDetalhes={this.irParaDetalhes}
-					adicionaAoCarrinho={this.adicionaAoCarrinho}
-				/>
-	
-			case "DETALHES":
-				return <Detalhes
-					irParaContratar={this.irParaContratar}
-					servicoId={this.state.detalhesDoServico}
-				/>
-
-			default:
-				return <div>"página não encontrada"</div>
+		case "Home":
+			return <Menu irParaHome={this.irParaHome}/>
+		case "ContratarUmNinja":
+			return <Contratar irParaContratarUmNinja={this.irParaContratarUmNinja}/>
+		case "QueroSerUmNinja":
+			return <CadastreServico irParaQueroSerUmNinja={this.irParaQueroSerUmNinja}/>
+		case "Card":
+			return <Card irParaCard ={this.irParaCard}/>
+		// case "Carrinho":
+		// 	return <TELA DO CARRINHO irParaCarrinho={this.irParaCarrinho}/>
+		default:
+			return <div> Erro! Essa pagina não existe! </div>
 		}
-	}
+	  }
+
+	irParaHome= () => {
+		this.setState({telaAtual: "home"})
+		console.log(1)
+	  }
+	
+	irParaContratarUmNinja = () => {
+		this.setState({telaAtual: "ContratarUmNinja"})
+		console.log(2)
+	  }
+
+	irParaQueroSerUmNinja = () => {
+		this.setState({telaAtual: "QueroSerUmNinja"})
+		console.log(3)
+	  }
+
+	irParaCard = () => {
+		this.setState({telaAtual: "Card"})
+		console.log(4)
+	  }
+
+	// irParaCarrinho = () => {
+	// 	this.setState({telaAtual: "Carrinho"})
+	//   }
+
 
 	render() {
 		return (
 			<div>
-				<GlobalStyle />
-				<HeaderContainer>
-					<h2>LabeNinjas</h2>
-
-					<ButtonContainer>
-						<button onClick={() => { this.irParaHome() }}>Home</button>
-						<button onClick={() => { this.irParaCarrinho() }}>Carrinho</button>
-					</ButtonContainer>
-
-				</HeaderContainer>
-
-				<div>
-					{this.atualizaPagina()}
-				</div>
+			{this.mudarDePage()}
 			</div>
 		)
 	}
 }
+

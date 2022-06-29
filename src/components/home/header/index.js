@@ -4,26 +4,25 @@ import logo from './img/logo.png'
 import carrinho from './img/carrinho.png'
 
 
-class Header extends React.Component {
+
+export default class Header extends React.Component {
   render() {
     return (
         <div className="contene">
                 <header class="header">
-                    <img className='logo' src={logo} alt="logo" onClick={() => console.log("Home")}></img>
+                    <img className='logo' src={logo} alt="logo" onClick={this.props.irParaHome}></img>
                     <nav>
                         <ul className='nav-links'>
-                            <li onClick={() => console.log("Home")}> Home</li>
-                            <li onClick={() => console.log("Contratar um Ninja")}> Contratar um Ninja </li>
-                            <li onClick={() => console.log("Quero Ser um Ninja")}> Quero Ser um Ninja</li>
+                            <li onClick={() => {this.props.irParaHome()}}> Home</li>
+                            <li onClick={() => {this.props.irParaContratarUmNinja()}}> Contratar um Ninja </li>
+                            <li onClick={() => {this.props.irParaQueroSerUmNinja()}}> Quero Ser um Ninja</li>
                         </ul>
                     </nav>
                     <div className='header-button'>
-                        <a className='cta' href='#'><button onClick={() => console.log("Carrinho")}><img src={carrinho} width={20} height={20} ></img>⠀Carrinho</button></a>
+                        <a className='cta' href='#'><button onClick={this.props.irParaCarrinho}><img src={carrinho} width={20} height={20} ></img>⠀Carrinho</button></a>
                     </div>
                 </header>
         </div>
     )
 }
 }
-
-export default Header;
