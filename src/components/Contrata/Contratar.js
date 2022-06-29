@@ -11,7 +11,7 @@ justify-content: space-around;
 margin: 20px 0px;
 
 input {
-    width: 20vw;
+    width: 15vw;
     height: 30px;
     border-radius: 5px;
 }
@@ -25,7 +25,7 @@ select{
 const AlinharCards = styled.div`
 display: grid;
 grid-template-columns: repeat(3, 1fr);
-gap: 30px;
+gap: 50px;
 `
 const TelaComOsCards = styled.div`
 display: flex;

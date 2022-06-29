@@ -3,7 +3,7 @@ import Menu from './components/Home/Menu/index';
 import Contratar from './components/Contrata/Contratar';
 import CadastreServico from './components/Cadastre-Serviço/CadastreServico';
 import Card from './components/Card/Card';
-
+import CadastreServico from "./components/Cadastre-Serviço/CadastreServico";
 
 export default class App extends Component {
 	
