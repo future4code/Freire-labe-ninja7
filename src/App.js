@@ -8,7 +8,7 @@ import Detalhes from './components/Detalhes/Detalhes';
 export default class App extends Component {
 	
 	state = {
-		telaAtual : "ContratarUmNinja",
+		telaAtual : "Home",
 		detalhesDoServico : ""
 	  }
 

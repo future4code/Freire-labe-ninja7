@@ -144,9 +144,11 @@ export default class CadastreServico extends React.Component {
 			      irParaContratarUmNinja={this.props.irParaContratarUmNinja}
 			      irParaQueroSerUmNinja={this.props.irParaQueroSerUmNinja}/>
         <div className="container">
-        <h1> Cadastre o seu serviço </h1>
 
-        <br />
+    
+        <h1> Cadastre o seu serviço </h1>
+  
+
 
         <input
           value={this.state.titulo}
@@ -166,7 +168,7 @@ export default class CadastreServico extends React.Component {
           placeholder="Preço"
           type="number"
         />
-
+ 
         <Select
         onChange={this.onChangePagamento }
         components={animatedComponents}
@@ -174,8 +176,8 @@ export default class CadastreServico extends React.Component {
         isMulti
         options={options}
         closeMenuOnSelect={false}
-      />
-
+        />
+ 
         <input
           placeholder="Prazo de Serviço"
           type="date"

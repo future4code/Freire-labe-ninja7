@@ -6,18 +6,46 @@ import Header from '../Home/Header';
 import Footer from '../Home/Footer';
 
 const AlinhaInputs = styled.div`
+
 display: flex;
 justify-content: space-around;
-margin: 20px 0px;
+margin: 30px 10px;
 
 input {
+    background-color: hsl(0, 0%, 100%);
+    border-color: hsl(0, 0%, 80%);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 38px;
+    outline: 0!important;
+    transition: all 100ms;
+    box-sizing: border-box;
     width: 15vw;
-    height: 30px;
-    border-radius: 5px;
+    height: 35px;
 }
 select{
-    width: 20vw;
-    border-radius: 5px;
+    
+    color: #5c5b5a;
+    background-color: hsl(0, 0%, 100%);
+    border-color: hsl(0, 0%, 80%);
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+    min-height: 38px;
+    outline: 0!important;
+
+    transition: all 100ms;
+    box-sizing: border-box;
+    
+    width: 15vw;
+    height: 35px;
 }
 
 
@@ -30,6 +58,8 @@ gap: 50px;
 const TelaComOsCards = styled.div`
 display: flex;
 justify-content: center;
+padding: 50px;
+
 
 `
 export default class Contratar extends React.Component {
@@ -73,7 +103,7 @@ export default class Contratar extends React.Component {
         const url = "https://labeninjas.herokuapp.com/jobs"
         Axios.get(url, {
             headers:
-                { Authorization: 'e2190c39-7930-4db4-870b-bed0e5e4b88e' }
+                { Authorization: '7d95ba58-9060-4f89-9805-67c14d11e93d' }
         }).then((res) => {
             console.log(res.data.jobs)
             this.setState({ listaDeServico: res.data.jobs, listaDeServicoFiltrada: res.data.jobs })
@@ -128,9 +158,11 @@ export default class Contratar extends React.Component {
                     irParaContratarUmNinja={this.props.irParaContratarUmNinja}
                     irParaQueroSerUmNinja={this.props.irParaQueroSerUmNinja}/>
                 <AlinhaInputs>
+
                 <input value={this.state.valorMin} onChange={this.atualizarValorMin} placeholder="Valor Mínimo"></input>
                 <input value={this.state.valorMax} onChange={this.atualizarValorMax} placeholder="Valor Máximo"></input>
                 <input value={this.state.buscar} onChange={this.atualizarBuscar} placeholder="busca por título ou descrição"></input>
+                
                 <select value={this.state.ordem} onChange={this.atualizarOrdem}>
                     <option>Sem Ordenação</option>
                     <option>Menor Valor</option>
