@@ -1,11 +1,8 @@
 import React from 'react';
-import Header from '../Header/index.js';
-import Footer from '../Footer/index.js';
-import Article from '../Article/index.js';
+import Header from '../Home/Header';
+import Footer from '../Home/Footer';
 
-
-
-export default class Menu extends React.Component {
+export default class Carrinho extends React.Component {
     
   render() {
     return (
@@ -14,8 +11,9 @@ export default class Menu extends React.Component {
             irParaHome={this.props.irParaHome}
 			irParaContratarUmNinja={this.props.irParaContratarUmNinja}
 			irParaQueroSerUmNinja={this.props.irParaQueroSerUmNinja}
-            irParaCarrinho={this.props.irParaCarrinho}/>
-            <Article/>
+            irParaCarrinho={this.irParaCarrinho}/>
+            
+            <h1> asokldhioasdhoi </h1>
             <Footer />
         </div>
     )

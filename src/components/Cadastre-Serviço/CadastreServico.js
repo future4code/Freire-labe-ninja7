@@ -3,8 +3,8 @@ import axios from "axios";
 import './index.css';
 import Select from "react-select";
 import makeAnimated from "react-select/animated";
-import Header from "../Home/Header";
-import Footer from "../Home/Footer";
+import Header from "../Home/Header/index.js";
+import Footer from "../Home/Footer/index.js";
 
 const animatedComponents = makeAnimated();
 
@@ -151,18 +151,21 @@ export default class CadastreServico extends React.Component {
 
 
         <input
+          className="input-cadastre"
           value={this.state.titulo}
           onChange={this.onChangeTitulo}
           placeholder="título"
         />
 
         <input
+          className="input-cadastre"
           value={this.state.Descricao}
           onChange={this.onChangeDescricao}
           placeholder="Descrição"
         />
 
         <input
+          className="input-cadastre"
           value={this.state.preco}
           onChange={this.onChangePreco}
           placeholder="Preço"
