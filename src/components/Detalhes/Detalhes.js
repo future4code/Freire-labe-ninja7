@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import Axios from 'axios';
-import Footer from '../Home/Footer';
-import Header from '../Home/Header';
+import Footer from '../Home/Footer/index.js';
+import Header from '../Home/Header/index.js';
 
 const Detalhesconteiner = styled.div`
 

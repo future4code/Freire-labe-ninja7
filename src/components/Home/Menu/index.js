@@ -1,7 +1,7 @@
 import React from 'react';
-import Header from '../Header';
-import Footer from '../Footer';
-import Article from '../Article';
+import Header from '../Header/index.js';
+import Footer from '../Footer/index.js';
+import Article from '../Article/index.js';
 
 
 export default class Menu extends React.Component {

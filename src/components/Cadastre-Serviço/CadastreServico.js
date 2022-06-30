@@ -3,8 +3,8 @@ import axios from "axios";
 import './index.css';
 import Select from "react-select";
 import makeAnimated from "react-select/animated";
-import Header from "../Home/Header";
-import Footer from "../Home/Footer";
+import Header from "../Home/Header/index.js";
+import Footer from "../Home/Footer/index.js";
 
 const animatedComponents = makeAnimated();
 
