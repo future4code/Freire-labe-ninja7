@@ -151,18 +151,21 @@ export default class CadastreServico extends React.Component {
 
 
         <input
+          className="input-cadastre"
           value={this.state.titulo}
           onChange={this.onChangeTitulo}
           placeholder="título"
         />
 
         <input
+          className="input-cadastre"
           value={this.state.Descricao}
           onChange={this.onChangeDescricao}
           placeholder="Descrição"
         />
 
         <input
+          className="input-cadastre"
           value={this.state.preco}
           onChange={this.onChangePreco}
           placeholder="Preço"

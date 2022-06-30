@@ -30,13 +30,19 @@ height: 20vw;
 padding: 15px;
 
 
-h2{
+h2 , li {
+    color: black;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 5px;
     margin-top: 20px;
     
+}
+
+li {
+
+    color: #171dd4;
 }
 div{
     display: flex;
@@ -74,6 +80,8 @@ export default class Detalhes extends React.Component{
             }
         }).then((res)=>{
             this.setState({servico:res.data})
+            console.log(this.state.servico)
+
         }).catch((err)=>{
             alert(err)
         })
@@ -110,7 +118,7 @@ export default class Detalhes extends React.Component{
               <div>{listaDeFormasDePagamento}</div>
             </div>
 
-              <button onClick={this.props.irParaHome}> Voltar para lista</button>
+              <button onClick={this.props.irParaContratarUmNinja}> Voltar para lista</button>
               
             </Detalhesconteiner>
      

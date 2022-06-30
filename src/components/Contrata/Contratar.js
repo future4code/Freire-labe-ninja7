@@ -9,20 +9,25 @@ const AlinhaInputs = styled.div`
 
 display: flex;
 justify-content: space-around;
-margin: 30px 10px;
+margin: 30px 200px;
 
 input {
+    color: #5c5b5a;
     background-color: hsl(0, 0%, 100%);
     border-color: hsl(0, 0%, 80%);
     border-radius: 4px;
     border-style: solid;
     border-width: 1px;
+
     flex-wrap: wrap;
+
     justify-content: space-between;
     min-height: 38px;
     outline: 0!important;
+    
     transition: all 100ms;
     box-sizing: border-box;
+    
     width: 15vw;
     height: 35px;
 }
@@ -46,16 +51,19 @@ select{
     
     width: 15vw;
     height: 35px;
+
 }
 
 
 `
 const AlinharCards = styled.div`
+
 display: grid;
 grid-template-columns: repeat(3, 1fr);
 gap: 50px;
 `
 const TelaComOsCards = styled.div`
+
 display: flex;
 justify-content: center;
 padding: 50px;
@@ -105,10 +113,8 @@ export default class Contratar extends React.Component {
             headers:
                 { Authorization: '7d95ba58-9060-4f89-9805-67c14d11e93d' }
         }).then((res) => {
-            console.log(res.data.jobs)
             this.setState({ listaDeServico: res.data.jobs, listaDeServicoFiltrada: res.data.jobs })
         }).catch((err) => {
-            console.log(err)
         })
     }
     filtroDosServicos= () =>{
@@ -159,9 +165,9 @@ export default class Contratar extends React.Component {
                     irParaQueroSerUmNinja={this.props.irParaQueroSerUmNinja}/>
                 <AlinhaInputs>
 
-                <input value={this.state.valorMin} onChange={this.atualizarValorMin} placeholder="Valor Mínimo"></input>
-                <input value={this.state.valorMax} onChange={this.atualizarValorMax} placeholder="Valor Máximo"></input>
-                <input value={this.state.buscar} onChange={this.atualizarBuscar} placeholder="busca por título ou descrição"></input>
+                <input value={this.state.valorMin} onChange={this.atualizarValorMin} placeholder="⠀⠀Valor Mínimo"></input>
+                <input value={this.state.valorMax} onChange={this.atualizarValorMax} placeholder="⠀⠀Valor Máximo"></input>
+                <input value={this.state.buscar} onChange={this.atualizarBuscar} placeholder="⠀⠀busca por título ou descrição"></input>
                 
                 <select value={this.state.ordem} onChange={this.atualizarOrdem}>
                     <option>Sem Ordenação</option>

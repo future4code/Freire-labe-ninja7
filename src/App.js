@@ -3,7 +3,7 @@ import Menu from './components/Home/Menu/index';
 import Contratar from './components/Contrata/Contratar';
 import CadastreServico from './components/Cadastre-Serviço/CadastreServico';
 import Detalhes from './components/Detalhes/Detalhes';
-
+import Carrinho from './components/Carrinho/index';
 
 export default class App extends Component {
 	
@@ -37,10 +37,12 @@ export default class App extends Component {
 			return <Detalhes 
 			servicoId= {this.state.detalhesDoServico}
 			irParaHome={this.irParaHome}
-			irParaDetalhes={this.irParaDetalhes}
-			irParaQueroSerUmNinja={this.irParaQueroSerUmNinja}/> 
-		// case "Carrinho":
-		// 	return <TELA DO CARRINHO irParaCarrinho={this.irParaCarrinho}/>
+			irParaQueroSerUmNinja={this.irParaQueroSerUmNinja}
+			irParaContratarUmNinja={this.irParaContratarUmNinja}
+			/> 
+
+		case "Carrinho":
+		 	return <Carrinho irParaCarrinho={this.irParaCarrinho}/>
 		default:
 			return <div> Erro! Essa pagina não existe! </div>
 		}
@@ -48,22 +50,18 @@ export default class App extends Component {
 
 	irParaHome= () => {
 		this.setState({telaAtual: "Home"})
-		console.log(1)
 	  }
 	
 	irParaContratarUmNinja = () => {
 		this.setState({telaAtual: "ContratarUmNinja"})
-		console.log(2)
 	  }
 
 	irParaQueroSerUmNinja = () => {
 		this.setState({telaAtual: "QueroSerUmNinja"})
-		console.log(3)
 	  }
 
 	irParaCard = () => {
 		this.setState({telaAtual: "Card"})
-		console.log(4)
 	  }
 
 	irParaDetalhes = (servicoId) => {
@@ -71,10 +69,9 @@ export default class App extends Component {
 	}
 
 
-	// irParaCarrinho = () => {
-	// 	this.setState({telaAtual: "Carrinho"})
-	//   }
-
+	irParaCarrinho = () => {
+		this.setState({telaAtual: "Carrinho"})
+ }
 
 	render() {
 		return (
