@@ -1,7 +1,8 @@
-/home/julia/Imagens/pagina1.pdf
-/home/julia/Imagens/Pagina2.pdf
-/home/julia/Imagens/pagina3.pdf
-/home/julia/Imagens/pagina4.pdf
+[pagina1.pdf](https://github.com/future4code/Freire-labe-ninja7/files/9030708/pagina1.pdf)
+[Pagina2.pdf](https://github.com/future4code/Freire-labe-ninja7/files/9030709/Pagina2.pdf)
+[pagina3.pdf](https://github.com/future4code/Freire-labe-ninja7/files/9030710/pagina3.pdf)
+[pagina4.pdf](https://github.com/future4code/Freire-labe-ninja7/files/9030711/pagina4.pdf)
+
 
 
 Escolhemos as devidas cores e a forma como vamos fazer o site,
