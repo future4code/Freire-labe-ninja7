@@ -8,7 +8,7 @@
   <a href="#Instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#Imagens">Imagens</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#Licença">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-   <a href="#wireframe">wireframe</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+   <a href="#wireframe">wireframe</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 </p>
 
 <a id="Tecnologias"></a>
@@ -60,8 +60,8 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 <a id="Licença"></a>
 ## 📝 Licença
-
-Esse projeto está sob a licença MIT. Veja o arquivo [![NPM](http://img.shields.io/npm/l/react)](https://github.com/future4code/Freire-labe-ninja7/blob/master/LICENSE) para mais detalhes.
+[![NPM](http://img.shields.io/npm/l/react)](https://github.com/future4code/Freire-labe-ninja7/blob/master/LICENSE) <br />
+Esse projeto está sob a licença MIT. Veja o arquivo para mais detalhes.
 
 <a id="wireframe"></a>
 ## wireframe
