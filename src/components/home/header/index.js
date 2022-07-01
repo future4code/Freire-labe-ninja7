@@ -18,7 +18,7 @@ export default class Header extends React.Component {
                         </ul>
                     </nav>
                     <div className='header-button'>
-                        <a className='cta' href='#'><button onClick={this.props.irParaCarrinho}><img src={carrinho} width={20} height={20} ></img>⠀Carrinho</button></a>
+                        <button onClick={() => {this.props.irParaCarrinho()}}><img src={carrinho} width={20} height={20} ></img>⠀Carrinho</button>
                     </div>
                 </header>
         </div>

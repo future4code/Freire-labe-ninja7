@@ -6,7 +6,7 @@ import logo from "./img/logo.png";
 export default class Footer extends Component {
     render() {
         return (
-            <footer>
+            <footer >
                 <img src={logo} alt=""></img>
                 <div className='social-icons-container'>
                     <a href='https://www.facebook.com/' target="_blank" className="social-icon"></a>

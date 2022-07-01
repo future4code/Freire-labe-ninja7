@@ -41,7 +41,7 @@ h2 , li {
 }
 
 li {
-
+    font-weight: 900;
     color: #171dd4;
 }
 div{
@@ -101,7 +101,8 @@ export default class Detalhes extends React.Component{
             <Header 
                 irParaHome={this.props.irParaHome}
                 irParaContratarUmNinja={this.props.irParaContratarUmNinja}
-                irParaQueroSerUmNinja={this.props.irParaQueroSerUmNinja}/>
+                irParaQueroSerUmNinja={this.props.irParaQueroSerUmNinja}
+                irParaCarrinho={this.props.irParaCarrinho}/>
             <div> 
                 
             <TelaDeDetalhes>

@@ -162,7 +162,8 @@ export default class Contratar extends React.Component {
                 <Header 
                     irParaHome={this.props.irParaHome}
                     irParaContratarUmNinja={this.props.irParaContratarUmNinja}
-                    irParaQueroSerUmNinja={this.props.irParaQueroSerUmNinja}/>
+                    irParaQueroSerUmNinja={this.props.irParaQueroSerUmNinja}
+                    irParaCarrinho={this.props.irParaCarrinho}/>
                 <AlinhaInputs>
 
                 <input value={this.state.valorMin} onChange={this.atualizarValorMin} placeholder="⠀⠀Valor Mínimo"></input>
