@@ -9,7 +9,6 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-border: solid 2px red;
 
 
 
