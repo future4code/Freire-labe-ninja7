@@ -8,9 +8,10 @@
   <a href="#Instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#Imagens">Imagens</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#Licença">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+   <a href="#wireframe">wireframe</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
 </p>
 
-
+<a id="Tecnologias"></a>
 ## 🚀 Tecnologias 
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
@@ -19,7 +20,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - React.js
 - Styled Components
 
-
+<a id="Projeto"></a>
 ## 💻 Projeto
    Esta aplicação consiste em uma plataforma de Marketplace baseada no site GetNinjas.
 
@@ -30,14 +31,14 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 ## Link surge - [Contrate um Ninja Aqui](https://tawdry-plane.surge.sh/)
 
-
+<a id="Instalação"></a>
 ## Contribuintes:
 * [Gideony Ewerton](https://www.linkedin.com/in/gideonyewerton/)
 * [Maycon Coutinho](https://www.linkedin.com/in/maycon-coutinho/)
 * [Julia Moreira](https://www.linkedin.com/in/julia-moreira-3885271b3/)
 * [Lucas Castro](https://www.linkedin.com/in/lucastelescastro/)
   
-
+<a id="Instalação"></a>
 ## 👨‍💻 Instalação
 
 1. Faça o dowload e extração do projeto;
@@ -46,7 +47,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 4. Execute, dentro dela, o comando **npm install**;
 5. Quando acabar, rode o comando **npm run start**;
 
-
+<a id="Imagens"></a>
 ## 🖼️ Imagens
 
 | Tela Inicial  | Cadastro de Serviço | Busca de Serviços | 
@@ -57,12 +58,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 |---|---|---|
 | ![Detalhes do Serviço](https://user-images.githubusercontent.com/35054595/176957526-241042f6-0207-4523-94c3-3ae86f54c0c8.png) | ![Carrinho Vazio](https://user-images.githubusercontent.com/35054595/176957595-b8a8ba48-89d5-4910-bc0b-d7610201833c.png) | ![Carrinho Cheio](https://user-images.githubusercontent.com/35054595/176957586-e391a83d-47bc-4ef2-91eb-2dcbfca55ccd.png) | 
 
-
+<a id="Licença"></a>
 ## 📝 Licença
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE] para mais detalhes.
+Esse projeto está sob a licença MIT. Veja o arquivo [![NPM](http://img.shields.io/npm/l/react)](https://github.com/future4code/Freire-labe-ninja7/blob/master/LICENSE) para mais detalhes.
 
-
+<a id="wireframe"></a>
 ## wireframe
  Tela Inicial  | Cadastro de Serviço |
 |---|---|
