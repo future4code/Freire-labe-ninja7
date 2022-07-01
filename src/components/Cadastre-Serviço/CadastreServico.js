@@ -142,13 +142,11 @@ export default class CadastreServico extends React.Component {
         <Header 
             irParaHome={this.props.irParaHome}
 			      irParaContratarUmNinja={this.props.irParaContratarUmNinja}
-			      irParaQueroSerUmNinja={this.props.irParaQueroSerUmNinja}/>
+			      irParaQueroSerUmNinja={this.props.irParaQueroSerUmNinja}
+            irParaCarrinho={this.props.irParaCarrinho}/>
         <div className="container">
 
-    
         <h1> Cadastre o seu serviço </h1>
-  
-
 
         <input
           className="input-cadastre"
@@ -182,6 +180,7 @@ export default class CadastreServico extends React.Component {
         />
  
         <input
+          className="input-cadastre"
           placeholder="Prazo de Serviço"
           type="date"
           value={this.state.data}
