@@ -1,34 +1,56 @@
 import React from 'react';
-import styled from 'styled-components'
+import styled from 'styled-components';
 import CardCarrinho from '../CardCarrinho/CardCarrinho';
 import Header from '../Home/Header/index';
-import Footer from '../Home/Footer/index'
+import Footer from '../Home/Footer/index';
+import CarrinhoVazio from './img/carrinho-vazio.jpg';
 
 const DadosDoCarrinho = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-border: solid 2px red;
 
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
 div{
     display: flex;
     justify-content: center;
     align-items: center;
 
-    button{
-        margin: 10px;
+    .button-finalizar-voltar{
+        margin-left: 20px;
+        margin-bottom: 20px;
+        margin-top: 20px;
         width: 140px;
     }
+
+    @media (max-width: 900px) {
+
+        .button-finalizar-voltar{
+            margin-left: 30px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-size: 12px;
+    }
+    }
+
 }
 `
 const Mensagem = styled.div`
-
-h1 {
     text-align: center;
-    padding: 6cm;
+
+    
+h1 {
+    @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+    font-family: 'Source Sans Pro', sans-serif;
+
+    text-align: center;
+    padding: 1cm;
+
+    @media (max-width: 900px) {
+        padding: 3cm;
+    }
 }
 `
 
@@ -58,8 +80,8 @@ export default class Carrinho extends React.Component {
  
                          <p>Valor Total: R${precoTotal.toFixed(2)} </p>
                          <div>
-                             <button onClick={() => { this.props.limparCarrinho() }}>Finalizar Compra</button>
-                             <button onClick={() => { this.props.irParaQueroSerUmNinja() }}>Voltar a Lista</button>
+                             <button className='button-finalizar-voltar' onClick={() => { this.props.limparCarrinho() }}>Finalizar Compra</button>
+                             <button className='button-finalizar-voltar' onClick={() => { this.props.irParaContratarUmNinja() }}>Voltar a Lista</button>
                          </div>
 
                 
@@ -68,6 +90,7 @@ export default class Carrinho extends React.Component {
                 ) : (
                     <Mensagem>
                         <h1>Carrinho Vazio</h1>
+                        <img src={CarrinhoVazio} width={200}></img>
                     </Mensagem>
                 )}
                 

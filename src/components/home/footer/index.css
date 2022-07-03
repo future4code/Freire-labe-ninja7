@@ -12,8 +12,6 @@ body{
     position: relative;
 }
 
-
-
 footer{
 
     width: 100%;
@@ -37,7 +35,6 @@ footer > img {
     height: 80px;
     margin-bottom: 1rem;
 }
-
 
 .social-icons-container, .footer-menu-container {
 
@@ -77,15 +74,12 @@ footer > img {
     background-image: url(./img/whatsapp.png);
 }
 
-
 .footer-menu-container{
 
     list-style-type: none;
     color: #f2f2f2;
     font-size: 18px;
 }
-
-
 
 .menu-item{
 
@@ -106,3 +100,4 @@ footer > img {
     opacity: 0.3;
     text-align: center;
 }
+

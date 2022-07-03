@@ -3,7 +3,6 @@ import './index.css';
 import logo from './img/logo.png'
 import carrinho from './img/carrinho.png'
 
-
 export default class Header extends React.Component {
   render() {
     return (
@@ -20,6 +19,7 @@ export default class Header extends React.Component {
                     <div className='header-button'>
                         <button onClick={() => {this.props.irParaCarrinho()}}><img src={carrinho} width={20} height={20} ></img>⠀Carrinho</button>
                     </div>
+                    
                 </header>
         </div>
     )
