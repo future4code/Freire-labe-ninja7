@@ -29,7 +29,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
    A plataforma se destaca pela variedade de serviços apresentados, tais como Assistência Técnica, Consultoria, Web Design, Reformas, Serviços Domésticos e Aulas Particulares.
    
 
-## Link surge - [Contrate um Ninja Aqui](https://scientific-peace.surge.sh/)
+## Link surge - [Contrate um Ninja Aqui](https://womanly-system.surge.sh/)
 
 <a id="Instalação"></a>
 ## Contribuintes:
