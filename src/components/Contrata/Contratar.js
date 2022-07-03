@@ -7,11 +7,20 @@ import Footer from '../Home/Footer';
 
 const AlinhaInputs = styled.div`
 
-display: flex;
 justify-content: space-around;
 margin: 30px 200px;
 
+@media(max-width: 896px ) {
+
+    justify-content: space-between;
+    display: grid;
+    margin: 30px 30px;
+}
+
 input {
+
+    margin-left: 15px;
+
     color: #5c5b5a;
     background-color: hsl(0, 0%, 100%);
     border-color: hsl(0, 0%, 80%);
@@ -30,9 +39,17 @@ input {
     
     width: 15vw;
     height: 35px;
+
+    @media(max-width: 896px ) {
+
+        margin: 5px;
+        width: 85vw;
+        height: 35px;
+}
 }
 select{
-    
+    margin-left: 15px;
+
     color: #5c5b5a;
     background-color: hsl(0, 0%, 100%);
     border-color: hsl(0, 0%, 80%);
@@ -51,6 +68,13 @@ select{
     
     width: 15vw;
     height: 35px;
+
+    @media(max-width: 896px ) {
+
+    margin: 5px;
+    width: 85vw;
+    height: 35px;
+}
 
 }
 
@@ -58,16 +82,51 @@ select{
 `
 const AlinharCards = styled.div`
 
-display: grid;
-grid-template-columns: repeat(3, 1fr);
-gap: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+
+@media(max-width: 667px ) {
+    
+    grid-template-columns: repeat(1, 1fr);
+           
+}`
+
+const Carregando =  styled.div`
+
+    display: block;
+    margin-left: 45%;
+    margin-right: 45%;
+
+
+    .carregando{
+        animation: is-rotating 1.2s linear infinite;
+        height: 60px;
+        width: 60px;
+        border: 6px solid #e5e5e5;
+        border-top-color: #ff009c ;
+        margin-top: 180px;
+        margin-bottom: 180px;
+        border-radius: 50px;
+  
+    }
+
+    @keyframes is-rotating {
+
+        to {
+            transform: rotate(1turn);
+        }
+        
+    }
+
+
 `
+
 const TelaComOsCards = styled.div`
 
-display: flex;
-justify-content: center;
-padding: 50px;
-
+    display: flex;
+    justify-content: center;
+    padding: 50px;
 
 `
 export default class Contratar extends React.Component {
@@ -164,26 +223,33 @@ export default class Contratar extends React.Component {
                     irParaContratarUmNinja={this.props.irParaContratarUmNinja}
                     irParaQueroSerUmNinja={this.props.irParaQueroSerUmNinja}
                     irParaCarrinho={this.props.irParaCarrinho}/>
-                <AlinhaInputs>
+                
 
-                <input value={this.state.valorMin} onChange={this.atualizarValorMin} placeholder="⠀⠀Valor Mínimo"></input>
-                <input value={this.state.valorMax} onChange={this.atualizarValorMax} placeholder="⠀⠀Valor Máximo"></input>
-                <input value={this.state.buscar} onChange={this.atualizarBuscar} placeholder="⠀⠀busca por título ou descrição"></input>
+                <AlinhaInputs>
+                <input value={this.state.valorMin} onChange={this.atualizarValorMin} placeholder="⠀Valor Mínimo"></input>
+                <input value={this.state.valorMax} onChange={this.atualizarValorMax} placeholder="⠀Valor Máximo"></input>
+                <input value={this.state.buscar} onChange={this.atualizarBuscar} placeholder="⠀busca por título ou descrição"></input>
                 
                 <select value={this.state.ordem} onChange={this.atualizarOrdem}>
-                    <option>Sem Ordenação</option>
-                    <option>Menor Valor</option>
-                    <option>Maior Valor</option>
-                    <option>Título</option>
-                    <option>Prazo</option>
+                    <option>⠀Sem Ordenação</option>
+                    <option>⠀Menor Valor</option>
+                    <option>⠀Maior Valor</option>
+                    <option>⠀Título</option>
+                    <option>⠀Prazo</option>
                 </select>
 
             </AlinhaInputs>
+            {servicos.length > 0 ? (
             <TelaComOsCards>
                 <AlinharCards>
                     {servicos}
                 </AlinharCards>
-            </TelaComOsCards>
+            </TelaComOsCards> 
+            )  : (
+            <Carregando>
+                    <div className='carregando'></div>
+            </Carregando>
+            )}
             <Footer></Footer>
             </div>
 

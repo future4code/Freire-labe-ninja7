@@ -49,6 +49,7 @@ export default class App extends Component {
 				irParaHome={this.irParaHome}
 				irParaQueroSerUmNinja={this.irParaQueroSerUmNinja}
 				irParaContratarUmNinja={this.irParaContratarUmNinja}
+				irParaCarrinho={this.irParaCarrinho}
 				/> 
 
 			case "Carrinho":

@@ -146,7 +146,7 @@ export default class CadastreServico extends React.Component {
             irParaCarrinho={this.props.irParaCarrinho}/>
         <div className="container">
 
-        <h1> Cadastre o seu serviço </h1>
+        <h1 className="titulo-cadastre"> Cadastre o seu serviço </h1>
 
         <input
           className="input-cadastre"
@@ -187,7 +187,7 @@ export default class CadastreServico extends React.Component {
           onChange={this.onChangeData}
         />
 
-        <button onClick={this.createJob}> Cadastrar Serviço </button>
+        <button onClick={this.createJob} className="button-finalizar-cadastro"> Cadastrar Serviço </button>
 
         </div>
 

@@ -6,62 +6,85 @@ import Header from '../Home/Header/index.js';
 
 const Detalhesconteiner = styled.div`
 
-    background-color: hsl(0, 0%, 100%);
+    background-color: rgb(245, 244, 251);
     border-color: hsl(0, 0%, 80%);
-    border-radius: 4px;
+    border-radius: 5px;
     border-style: solid;
     border-width: 1px;
 
-
+    box-shadow: rgb(204 204 204) 2px 2px 15px;
     flex-wrap: wrap;
 
     justify-content: space-between;
-    min-height: 38px;
     outline: 0!important;
 
     transition: all 100ms;
     box-sizing: border-box;
 
 
-display: flex;
-flex-direction: column;
-width: 30vw;
-height: 20vw;
-padding: 15px;
-
-
-h2 , li {
-    color: black;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 5px;
-    margin-top: 20px;
-    
-}
-
-li {
-    font-weight: 900;
-    color: #171dd4;
-}
-div{
     display: flex;
     flex-direction: column;
-    margin-bottom: 0px;
-}
+    width: 400px;
+    height: auto;
 
-.descricao{
-    margin-top: 20px;
+    h4  {
+        margin-left: 20px;
+    }
 
-}
+    p {
+        padding-left: 25px;
+        margin: 5px;
+    }
+
+    h2 {
+
+        @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+
+    h2, li {
+
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+        margin-top: 20px;
+        
+    }
+
+    li {
+        font-weight: 900;
+        color: #171dd4;
+    }
+    div{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0px;
+    }
+
+    .descricao{
+        margin-top: 20px;
+
+    }
+
+    .button-voltar-lista{
+
+        
+        width: 200px;
+        margin-bottom: 20px;
+        margin-left: 100px;
+
+    }
 `
 
 const TelaDeDetalhes = styled.div`
 
-padding: 100px 100px;
+padding: 25px 10px;
 display: flex;
 justify-content: center;
 margin-top: 20px;
+margin-bottom: 30px;
 
 `
 
@@ -119,7 +142,7 @@ export default class Detalhes extends React.Component{
               <div>{listaDeFormasDePagamento}</div>
             </div>
 
-              <button onClick={this.props.irParaContratarUmNinja}> Voltar para lista</button>
+              <button className='button-voltar-lista' onClick={this.props.irParaContratarUmNinja}> Voltar para lista</button>
               
             </Detalhesconteiner>
      
