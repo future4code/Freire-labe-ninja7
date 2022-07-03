@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+<h1 align="center">LabeNinjas Grupo 7<br/><br/>
+<img src="https://user-images.githubusercontent.com/35054595/176959466-b0c469ee-677c-421b-92bb-c0347e108d97.png"/> 
+</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <a href="#Tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+   <a href="#Projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#Instalação">Instalação</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#Imagens">Imagens</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#Licença">Licença</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+   <a href="#wireframe">wireframe</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
 
-## Available Scripts
+<a id="Tecnologias"></a>
+## 🚀 Tecnologias 
 
-In the project directory, you can run:
+Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-### `npm start`
+- HTML, CSS, Javascript
+- React.js
+- Styled Components
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<a id="Projeto"></a>
+## 💻 Projeto
+   Esta aplicação consiste em uma plataforma de Marketplace baseada no site GetNinjas.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+   No LabeNinjas, os prestadores podem oferecer seus serviços livremente, enquanto as pessoas com demandas específicas podem encontrar perfis bem alinhados ao que precisam.
 
-### `npm test`
+   A plataforma se destaca pela variedade de serviços apresentados, tais como Assistência Técnica, Consultoria, Web Design, Reformas, Serviços Domésticos e Aulas Particulares.
+   
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Link surge - [Contrate um Ninja Aqui](https://tawdry-plane.surge.sh/)
 
-### `npm run build`
+<a id="Instalação"></a>
+## Contribuintes:
+* [Gideony Ewerton](https://www.linkedin.com/in/gideonyewerton/)
+* [Maycon Coutinho](https://www.linkedin.com/in/maycon-coutinho/)
+* [Julia Moreira](https://www.linkedin.com/in/julia-moreira-3885271b3/)
+* [Lucas Castro](https://www.linkedin.com/in/lucastelescastro/)
+  
+<a id="Instalação"></a>
+## 👨‍💻 Instalação
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Faça o dowload e extração do projeto;
+2. Abra um terminal ([Git Bash](https://git-scm.com/) é o recomendado);
+3. Navegue até a pasta do projeto pelo seu terminal;
+4. Execute, dentro dela, o comando **npm install**;
+5. Quando acabar, rode o comando **npm run start**;
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<a id="Imagens"></a>
+## 🖼️ Imagens
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+| Tela Inicial  | Cadastro de Serviço | Busca de Serviços | 
+|---|---|---|
+| ![Tela Inicial](https://user-images.githubusercontent.com/35054595/176956901-7b6a7313-edea-4ed4-90a8-fe16cb4feb78.png) | ![Cadastro de Serviço](https://user-images.githubusercontent.com/35054595/176957052-e844deaa-b52d-4fbf-b0b0-c6b68a58656d.png) | ![Contratar um Ninja](https://user-images.githubusercontent.com/35054595/176957148-7575aa31-1566-4d1f-839e-0d4119d4182a.png) | 
 
-### `npm run eject`
+| Detalhes do Serviço  | Carrinho Vazio | Carrinho Cheio | 
+|---|---|---|
+| ![Detalhes do Serviço](https://user-images.githubusercontent.com/35054595/176957526-241042f6-0207-4523-94c3-3ae86f54c0c8.png) | ![Carrinho Vazio](https://user-images.githubusercontent.com/35054595/176957595-b8a8ba48-89d5-4910-bc0b-d7610201833c.png) | ![Carrinho Cheio](https://user-images.githubusercontent.com/35054595/176957586-e391a83d-47bc-4ef2-91eb-2dcbfca55ccd.png) | 
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<a id="Licença"></a>
+## 📝 Licença
+[![NPM](http://img.shields.io/npm/l/react)](https://github.com/future4code/Freire-labe-ninja7/blob/master/LICENSE) <br />
+Esse projeto está sob a licença MIT. Veja o arquivo para mais detalhes.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<a id="wireframe"></a>
+## wireframe
+ Tela Inicial  | Cadastro de Serviço |
+|---|---|
+![tela-de-inicio1](https://user-images.githubusercontent.com/35054595/176958756-4831ece2-de03-4484-a53e-f5c8f4e77d38.png) | ![Quero Ser um Ninja2](https://user-images.githubusercontent.com/35054595/176958886-db318293-55d4-438f-94d9-da897cd31144.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+| Contratar um Ninja  | Detalhes do Serviço |
+|---|---|
+![Contratar um Ninja2](https://user-images.githubusercontent.com/35054595/176959092-f3fc697e-d903-4089-8ccd-d973dffd6506.png) | ![Detalhes do Serviço3](https://user-images.githubusercontent.com/35054595/176959115-797f703a-a0c5-4cbe-84b8-47d77d2d58b0.png)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Escolhemos as devidas cores e a forma como vamos fazer o site,
+pois vimos  que iria deixar o site bem intuitivo, e bonito.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<h1 align="center">
+<img src="https://user-images.githubusercontent.com/35054595/176959567-d862582a-3222-4f18-bafa-631204220977.png"/> 
+</h1>
