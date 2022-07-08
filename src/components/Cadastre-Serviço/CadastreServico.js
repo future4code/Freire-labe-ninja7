@@ -3,10 +3,9 @@ import axios from "axios";
 import './index.css';
 import Select from "react-select";
 import makeAnimated from "react-select/animated";
-import Header from "../Home/Header/index.js";
-import Footer from "../Home/Footer/index.js";
-
-const animatedComponents = makeAnimated();
+import Header from "../Home/header/index";
+import Footer from "../Home/footer/index";
+  const animatedComponents = makeAnimated();
 
 const options = [
   { value: "cartão de débito", label: "cartão de débito"},
@@ -102,15 +101,13 @@ export default class CadastreServico extends React.Component {
       paymentMethods: this.state.pagamento,
       dueDate: this.state.data,
     };
-    console.log(body);
+   
     axios
       .post(url, body, {
         headers: {
           Authorization: "7d95ba58-9060-4f89-9805-67c14d11e93d",
         },
-      })
-
-      .then((resposta) => {
+      }).then((resposta) => {
         alert("Serviço cadastrado com sucesso");
         this.setState({
           titulo: "",
@@ -186,8 +183,8 @@ export default class CadastreServico extends React.Component {
           value={this.state.data}
           onChange={this.onChangeData}
         />
-
-        <button onClick={this.createJob} className="button-finalizar-cadastro"> Cadastrar Serviço </button>
+        {/* Correção do botão */}
+        <button onClick={()=>this.createJob()} className="button-finalizar-cadastro"> Cadastrar Serviço </button>
 
         </div>
 
