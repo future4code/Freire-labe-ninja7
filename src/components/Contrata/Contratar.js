@@ -2,8 +2,8 @@ import Axios from 'axios';
 import React from 'react';
 import styled from 'styled-components'
 import Card from '../Card/Card';
-import Header from '../Home/Header';
-import Footer from '../Home/Footer';
+import Header from '../Home/header/index';
+import Footer from '../Home/footer/index';
 
 const AlinhaInputs = styled.div`
 

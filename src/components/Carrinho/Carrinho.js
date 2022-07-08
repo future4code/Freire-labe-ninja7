@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 import CardCarrinho from '../CardCarrinho/CardCarrinho';
-import Header from '../Home/Header/index';
-import Footer from '../Home/Footer/index';
+import Header from '../Home/header/index'
+import Footer from '../Home/footer/index';
 import CarrinhoVazio from './img/carrinho-vazio.jpg';
 
 const DadosDoCarrinho = styled.div`
